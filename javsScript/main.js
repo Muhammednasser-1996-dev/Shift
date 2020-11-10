@@ -75,33 +75,28 @@ function animatInvest(){
 }
 window.addEventListener("scroll", animatInvest);
 
-// animation on Freelance section
-function animateFreelance(){
-  var freelance = document.querySelector(".freelance")
+// animation on team section
+function animateTeam(){
+  var freelance = document.querySelector(".team")
   introPositionFree = freelance.getBoundingClientRect().top;
    
-  var col1 = document.querySelector(".col1") 
-  var col2 = document.querySelector(".col2") 
-  var col3 = document.querySelector(".col3") 
-  var col4 = document.querySelector(".col4") 
+  var col1 = document.querySelector(".team-content") 
+ 
 
   freePosition = window.innerHeight / 2;
 
   if(introPositionFree < freePosition){
     col1.classList.add("animate__fadeInRight","appear" )
-    col2.classList.add("animate__fadeInUp","appear" )
-    col3.classList.add("animate__fadeInDown","appear" )
-    col4.classList.add("animate__fadeInLeft","appear" )
 }
 }
-window.addEventListener("scroll", animateFreelance);
+window.addEventListener("scroll", animateTeam);
 
 // animation on supplier section
-function animatesFaq(){
-  var faq = document.querySelector(".faq")
+function animatesproduct(){
+  var faq = document.querySelector(".product")
   introPositionfaq = faq.getBoundingClientRect().top;
    
-  var questions = document.querySelector(".details") 
+  var questions = document.querySelector(".product-content") 
 
 
   faqPosition = window.innerHeight / 2;
@@ -110,4 +105,61 @@ function animatesFaq(){
     questions.classList.add("animate__fadeInUp","appear" )
 }
 }
-window.addEventListener("scroll", animatesFaq);
+window.addEventListener("scroll", animatesproduct);
+
+// animate incentive
+function animatesIncentive(){
+  var faq = document.querySelector(".incentive")
+  introPositionfaq = faq.getBoundingClientRect().top;
+   
+  var questions = document.querySelector(".intencive-content") 
+
+
+  faqPosition = window.innerHeight / 2;
+
+  if(introPositionfaq < faqPosition){
+    questions.classList.add("animate__fadeInLeft","appear" )
+}
+}
+window.addEventListener("scroll", animatesIncentive);
+
+//animate event
+function animatesEvent(){
+  var faq = document.querySelector(".event")
+  introPositionfaq = faq.getBoundingClientRect().top;
+   
+  var questions = document.querySelector(".event-content") 
+
+
+  faqPosition = window.innerHeight / 2;
+
+  if(introPositionfaq < faqPosition){
+    questions.classList.add("animate__fadeInRight","appear" )
+}
+}
+window.addEventListener("scroll", animatesEvent);
+
+// animate QR
+function animatesQR(){
+  var faq = document.querySelector(".Qr")
+  introPositionfaq = faq.getBoundingClientRect().top;
+   
+  var questions = document.querySelector(".Qr-content") 
+
+
+  faqPosition = window.innerHeight / 2;
+
+  if(introPositionfaq < faqPosition){
+    questions.classList.add("animate__fadeInLeft","appear" )
+}
+}
+window.addEventListener("scroll", animatesQR);
+ 
+
+
+// dynamic tabs on my team apps section
+$(".tabs-list li ").click(function () { 
+  $(this).addClass('active').siblings().removeClass('active');
+  $('.content-list > div').hide();
+  $($(this).data('content')).fadeIn()
+});
