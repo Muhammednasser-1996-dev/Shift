@@ -1,0 +1,194 @@
+body{
+    font-family: 'El Messiri', sans-serif; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* start header*/
+.header{
+    background-image: url("../images/banner-bg-3.png"); 
+    height: 100vh;    
+    background-size: cover; 
+   }
+   .navbar{
+       background: rgba(255,255,255,0.30) !important ;
+       z-index: 11111111111;
+       transition: all .6s ease-in-out;
+   }
+   .scroll{
+     background-color: #3b566e !important ;
+   }
+   .navbar .navbar-brand img{
+       width:130px;
+   }
+   .navbar-nav {
+       color: #09c;
+   }
+   .navbar-nav .nav-item{
+       margin: 0px 20px;
+       font-size: 18px;
+       font-weight: 400;
+       text-transform: capitalize;
+       letter-spacing: 0.01em;
+       letter-spacing: 1px;
+       position: relative;
+       animation:lightSpeedIn 1.5s ease-out ;
+       color: #09c;
+   }
+   .navbar-nav .nav-item .nav-link{
+       color: #09c !important;
+   }
+   .navbar-nav .nav-item::after{
+     content: '';
+     display: flex;
+     position: absolute;
+     bottom: 145%;
+     left:0%;
+     right: 0%;
+     background-color: #09c;
+     width: 0%;
+     height: 2px;
+     transition: all .4s ease-in-out;
+   }
+   .navbar-nav .nav-item:hover::after{
+       width: 100%;
+   }
+   .navbar-nav .nav-item .drop-home{
+       border-top: 2px solid #09c;
+       background-color: #fff;
+       color: #4e4e4e;
+       display: flex;
+       flex-direction: column;
+   }
+   .navbar-nav .nav-item .drop-home{
+       list-style-type: none;
+       font-weight: 400;
+       font-size: 15px;
+       text-transform: capitalize;
+       position: absolute;
+       top: 140%;
+       left: 0%;
+       width: 240px;
+       visibility: hidden;
+       opacity: 0;
+       z-index: 231;
+       transition: all .5s ease-in-out;
+   }
+   .navbar-nav .nav-item .drop-home  a{
+       transition: all .5s ease-in-out;
+       text-align: left;
+       background-color: transparent;
+       color: #3b566e !important;
+       border: none;
+       padding: 10px;
+       cursor: pointer;
+   }
+   .navbar-nav .nav-item .drop-home  a:hover{
+       background-color:#3b566e ;
+       color: #fff !important;
+   }
+   .navbar-nav .nav-item:hover .drop-home{
+       visibility: visible;
+       opacity: 1;
+   }
+   .content-header .welcome h1{
+     color: #3b566e;
+     text-transform: capitalize;
+     position: relative;
+   }
+   .content-header .welcome h1::before{
+    content: '';
+    background-color: #0099cc;
+    display: inline;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    border-radius: 20px;
+    margin-right: 10px;
+    }
+   .content-header .welcome p{
+       color:#3b566e !important ;
+       line-height: 35px;
+       padding-top: 20px;
+   }
+   
+   @media screen and (max-width:900px){
+     .header{
+       height: 150vh;
+     }
+   }
+   /*end navbar*/
+
+   /*start team*/
+   .team{
+    background: #F6FAFE;
+    }
+    .team-head{
+      position: relative;
+      color: #3b566e;
+      z-index: 1;
+      font-size: 50px;
+      padding: 50px 0px;
+    }
+    .team-sub{
+      position: absolute;
+      margin: auto;
+      left: 48%;
+      bottom: 25%;
+      color: #e6e4e4;
+      font-size: 90px;
+      z-index: -1;
+    }
+    .team-head::after{
+      content: '';
+      height: 1px;
+      text-align: center;
+      width: 40px;
+      background-color: black;
+      display: block;
+      margin: auto;
+      transition: all .3s ease-in-out;
+    }
+    .team:hover .team-head::after{
+      width: 100px;
+    }
+
+    .team-service h1{
+        color: #3b566e;
+        text-transform: capitalize;
+        position: relative;
+      }
+    .team-service h1::before{
+    content: '';
+    background-color: #0099cc;
+    display: inline;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    border-radius: 20px;
+    margin-right: 10px;
+    }
+    .team-service .single-service{
+        background-color: #fff;
+        height: 200px;
+        line-height: 25px;
+        color: #3b566e;
+        margin: 55px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .team-service .single-service p{
+        color: #09c;
+        color: #f1f1f1;
+        font-size: 70px;
+        position: absolute;
+        bottom: 90%;
+        left: 0%;
+    }
+   /* end team */
