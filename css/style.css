@@ -7,7 +7,7 @@ body{
 
  /* start header*/
 .header{
- background-image: url("../images/banner-bg-4.png"); 
+ background-image: url("../images/banner-bg-3.png"); 
  height: 100vh;
  background-size: cover; 
 }
@@ -23,7 +23,7 @@ body{
     width:130px;
 }
 .navbar-nav {
-    color: #fff;
+    color: #3b566e !important;
 }
 .navbar-nav .nav-item{
     margin: 0px 20px;
@@ -49,6 +49,9 @@ body{
 }
 .navbar-nav .nav-item:hover::after{
     width: 100%;
+}
+.navbar-nav .nav-item .nav-link{
+  color: #09c !important;
 }
 .navbar-nav .nav-item .drop-home{
     background-color: #fff;
@@ -88,12 +91,12 @@ body{
     opacity: 1;
 }
 .content-header .welcome h1{
-  color: #fff;
+  color: #3b566e;
 
   text-transform: capitalize;
 }
 .content-header .welcome p{
-    color:#ECF2FC !important ;
+    color:#3b566e !important ;
     line-height: 35px;
     padding-top: 20px;
 }

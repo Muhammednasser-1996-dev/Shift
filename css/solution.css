@@ -39,7 +39,6 @@ ul{
        letter-spacing: 0.01em;
        letter-spacing: 1px;
        position: relative;
-       animation:lightSpeedIn 1.5s ease-out ;
        color: #09c;
    }
    .navbar-nav .nav-item .nav-link{
@@ -414,6 +413,55 @@ margin-right: 10px;
   font-style: italic;
 }
 /* security */
+
+
+
+/* contact us */
+.contact-info{
+  background-color: #fff;
+  padding: 40px 40px;
+}
+.contact-info h3{
+  color: #4e4e4e;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-bottom: 35px;
+  font-family: 'Titillium Web', sans-serif;
+}
+.contact-info h3::before{
+  content: ' ';
+  position: absolute;
+  height: 3px;
+  background-color:#0078ff;
+  width: 100px;
+  bottom: -12px;
+}
+.contact-info input,
+.contact-info textarea{
+  border: 1px solid #ced4da;
+  margin: 10px 0px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color:#495057;
+  padding: .375rem .75rem;
+}
+.contact-info .btn{
+  padding: .9rem 2.3rem;
+  font-size: 1.2rem;
+  background-color:#0078ff;
+  color:#fff; 
+  border-color:#cde1f8 
+}
+.contact-info .btn:hover{
+  background-color:#0062d3;
+  color:#fff;
+  transition: all .5s ease;
+  box-shadow: 0 0 0 4px #cde1f8;
+}
+/* contact us */
+
+
 
  /* footer */
  .footer img{
