@@ -7,9 +7,11 @@ body{
 
  /* start header*/
 .header{
- background-image: url("../images/banner-bg-3.png"); 
+ background-image: url("../images/slider_bg_1.jpg"); 
  height: 100vh;
  background-size: cover; 
+ background-position: center center;
+ background-size: cover;
 }
 .navbar{
     background: rgba(255,255,255,0.30) !important ;

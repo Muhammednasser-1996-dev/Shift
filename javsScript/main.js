@@ -22,7 +22,7 @@ var typed = new Typed('.type', {
 // navigator
 $("a").click(function(){   
   var sectionId= $(this).attr("href");
-  var positionOfSection = $(sectionId).offset().top;
+  var positionOfSection = $(sectionId).offset().top / 1.04;
   $("html , body").animate({scrollTop:positionOfSection},1000);
 })
 
