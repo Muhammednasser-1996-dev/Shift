@@ -11,13 +11,7 @@ window.addEventListener("scroll", ()=>{
 });
 
 
-/*typing 
-var typed = new Typed('.type', {
-  strings: ['better', 'more efficient','stronger'],
-  typeSpeed : 100,
-  backSpeed : 100,
-  loop : true
-});*/
+
 
 // navigator
 $("a").click(function(){   
@@ -162,4 +156,12 @@ $(".tabs-list li ").click(function () {
   $(this).addClass('active').siblings().removeClass('active');
   $('.content-list > div').hide();
   $($(this).data('content')).fadeIn()
+});
+
+//typing 
+var typed = new Typed('.type', {
+  strings: ['better', 'more efficient','stronger'],
+  typeSpeed : 100,
+  backSpeed : 100,
+  loop : true
 });

@@ -130,7 +130,9 @@ ul{
 
    /*start team*/
    .team{
-    background: #F6FAFE;
+    background-color: #ecf5fe;
+    background-image: url('../images/clouds17.png');
+    background-size: contain;
     }
   .team-head{
     position: relative;
@@ -266,11 +268,45 @@ margin-right: 10px;
 }
    /* end team */
 
+/* start geo */
+.geo{
+  background: url('../images/clouds17.png');
+  background-size: contain;
+}
+.geo .welcome h1{
+  color: #3b566e;
+  text-transform: capitalize;
+  position: relative;
+
+}
+.geo .welcome h1::before{
+ content: '';
+ background-color: #0099cc;
+ display: inline;
+ width: 5px;
+ height: 100%;
+ position: absolute;
+ right: 100%;
+ border-radius: 20px;
+ margin-right: 10px;
+ }
+ .geo .welcome p{
+  color:#3b566e !important ;
+  line-height: 35px;
+  padding-top: 20px;
+}
+/* end geo */
+
 /* prod */
+.product{
+  background: url('../images/clouds17.png');
+  background-size: contain;
+}
 .product-content h2{
   color: #3b566e;
   text-transform: capitalize;
   position: relative;
+
 }
 .product-content h2::before{
  content: '';
@@ -321,10 +357,15 @@ margin-right: 10px;
 
 
 /* start evevnts */
+.event{
+  background: url('../images/clouds17.png');
+  background-size: contain;
+}
 .event-content h3{
   color: #3b566e;
   text-transform: capitalize;
   position: relative;
+ 
 }
 .event-content h3::before{
  content: '';
@@ -373,6 +414,10 @@ margin-right: 10px;
 
 
 /* security */
+.security{
+  background: url('../images/clouds17.png');
+  background-size: contain;
+}
 .security-head{
   position: relative;
   color: #3b566e;
@@ -429,7 +474,12 @@ margin-right: 10px;
   text-transform: capitalize;
   font-size: 2rem;
   margin-bottom: 35px;
-  font-family: 'Titillium Web', sans-serif;
+}
+h1,h1,h3,h4,h5,h6{
+  font-family: 'Poppins', sans-serif !important; 
+ }
+p,span{
+  font-family: 'Lato', sans-serif !important; 
 }
 .contact-info h3::before{
   content: ' ';

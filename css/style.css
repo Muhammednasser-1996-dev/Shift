@@ -2,30 +2,61 @@ body{
      font-family: 'El Messiri', sans-serif; 
      box-sizing: border-box;
      overflow-x: hidden;
-     font-family: 'Heebo', sans-serif;
  }
 
+ h1,h1,h3,h4,h5,h6{
+  font-family: 'Poppins', sans-serif !important; 
+ }
+ /* #273f5b */
+ /* #121921 */
+ /* box-shadow: 10px 0 30px 0 rgba(18, 25, 33, 0.4) */
+p,span{
+  font-family: 'Lato', sans-serif !important; 
+  font-size: 23px !important;
+}
+.text-strongColor{
+  color: #ecf5fe !important;
+  font-weight: 900;
+}
  /* start header*/
 .header{
- background-image: url("../images/slider_bg_1.jpg"); 
- height: 100vh;
- background-size: cover; 
- background-position: center center;
- background-size: cover;
+  height: 80vh; 
+  background-color: #2051e9;
+  position: relative;
 }
+
+.ico-circled {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 70px solid #2bd6ff;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: floating2 10s infinite alternate;
+}
+
+@keyframes floating2{
+  0%{top: 0;}
+  40%{top: 10%;}
+  80%{left: 10%;}
+  90%{top:0% ;}
+}
+
 .navbar{
-    background: rgba(255,255,255,0.30) !important ;
+  
     z-index: 11111111111;
     transition: all .6s ease-in-out;
 }
 .scroll{
-  background-color: #3b566e !important ;
+  background-color: #2051e9 !important ;
 }
 .navbar .navbar-brand img{
     width:130px;
 }
 .navbar-nav {
-    color: #3b566e !important;
+    color: #fff !important;
 }
 .navbar-nav .nav-item{
     margin: 0px 20px;
@@ -53,7 +84,7 @@ body{
     width: 100%;
 }
 .navbar-nav .nav-item .nav-link{
-  color: #09c !important;
+  color: #fff !important;
 }
 .navbar-nav .nav-item .drop-home{
     background-color: #fff;
@@ -92,15 +123,19 @@ body{
     visibility: visible;
     opacity: 1;
 }
+.content-header{
+  padding-top: 140px;
+}
 .content-header .welcome h1{
-  color: #3b566e;
+  color: #ffff;
 
   text-transform: capitalize;
 }
 .content-header .welcome p{
-    color:#3b566e !important ;
+    color:#ffff !important ;
     line-height: 35px;
     padding-top: 20px;
+    font-size: 25px;
 }
 
 @media screen and (max-width:900px){
@@ -117,7 +152,9 @@ body{
 
 /*start about*/
 .about{
-background: #F6FAFE;
+background-color: #ecf5fe;
+background-image: url('../images/clouds15.png');
+background-size: contain;
 }
 .about-head{
   position: relative;
@@ -132,7 +169,7 @@ background: #F6FAFE;
   left: 48%;
   bottom: 25%;
   color: #e6e4e4;
-  font-size: 90px;
+  font-size: 90px !important;
   z-index: -1;
 }
 .about-head::after{
@@ -157,8 +194,10 @@ background: #F6FAFE;
 
 /*start solutions*/
 .solutions{
-  background: #ffff;
-  margin-top: 30px;
+  background: url('../images/clouds17.png');
+  padding-top: 30px;
+  background-size: contain;
+
   }
   .solution-head{
     position: relative;
@@ -173,7 +212,7 @@ background: #F6FAFE;
     left: 48%;
     bottom: 25%;
     color: #e6e4e4;
-    font-size: 90px;
+    font-size: 90px !important;
     z-index: -1;
   }
   .solution-head::after{
@@ -206,8 +245,11 @@ background: #F6FAFE;
 
 /* start investment */
 .investments{
-  background: #F6FAFE;
+  background: #ecf5fe;
   padding:50px 0px ;
+  background-image: url('../images/clouds15.png');
+  background-size: contain;
+
 }
 .investments h1{
   color:#3b566e !important ;
@@ -238,6 +280,9 @@ border-radius: 20px;
      padding: 0px 0px 20px 0;
      text-align: center;
      margin-top: 30px;
+     background: url('../images/clouds17.png');
+     background-size: contain;
+
  }
  .owl-carousel .owl-item img {
     display: flex;
@@ -262,8 +307,8 @@ border-radius: 20px;
   margin: auto;
   left: 48%;
   bottom: 25%;
-  color: #e6e4e4;
-  font-size: 90px;
+  color: #e6e4e4 ;
+  font-size: 90px !important;
   z-index: -1;
 }
 .partner-head::after{
@@ -290,6 +335,30 @@ border-radius: 20px;
  .footer img{
   width:100px;
  }
+ .footer .fast-links ul{
+   list-style-type: none;
+   padding-top: 5px;
+ }
+ .footer .fast-links ul li {
+   padding: 10px 0px;
+ }
+ .footer .fast-links ul li a{
+   border:  none !important;
+   color: #F6FAFE;
+   transition: all .4s ease-in-out;
+ }
+ .footer .fast-links ul li a:hover{
+  border:  none !important;
+  color: #09c;
+}
+.register tr td{
+  color: #fff;
+  padding: 13px;}
+  .register i{
+    font-size: 20px;
+    padding: 5px ;
+    color:#09c ;
+  }
  /* footer */
 
 
