@@ -1,3 +1,10 @@
+$(document).ready(function(){
+  //loading spinner
+  $("#loading").slideUp(2000 , function(){
+  
+    $("body").css("overflow","auto")
+  });
+  })
 
 // firing the owel carousel plugin
 $(document).ready(function(){
@@ -163,4 +170,7 @@ var typed = new Typed('.type', {
   backSpeed : 100,
   loop : true
 });
+
+
+
 
