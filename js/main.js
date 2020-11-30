@@ -5,20 +5,18 @@ $(document).ready(function(){
      autoplayHoverPause:true, loop:true,items:4,center:true,margin:40 , items:5,});
 });
 
-window.addEventListener("scroll", ()=>{
-    let navi = document.getElementById('navi')
-    navi.classList.toggle("scroll", scrollY > 0)
-});
-
-
-
-
 // navigator
 $("a").click(function(){   
   var sectionId= $(this).attr("href");
   var positionOfSection = $(sectionId).offset().top / 1.04;
   $("html , body").animate({scrollTop:positionOfSection},1000);
 })
+
+//change background color of navbar while scrolling
+window.addEventListener("scroll", ()=>{
+  let navi = document.getElementById('navi')
+  navi.classList.toggle("scroll", scrollY > 0)
+});
 
 // animation on partners section
 function animatePartner(){
@@ -165,3 +163,4 @@ var typed = new Typed('.type', {
   backSpeed : 100,
   loop : true
 });
+
